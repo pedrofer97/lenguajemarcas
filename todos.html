@@ -114,7 +114,7 @@
            ondragstart="console.log('Empezó el drag')"
            ondragend="console.log('Se soltó el elemento')">
         Arrástrame
-      </div>
+      </div> 
     </div>
 
     <div class="card">
@@ -133,7 +133,8 @@
     /* ===================== BARRA DE PROGRESO ===================== */
     const barra = document.getElementById("barra");
     let progreso = 0;
-
+    //set interval ejecuta una funcion repetida cada x milisegundos, 500 en este caso
+    //la barra aumenta de 10 en 10 su pregreso hasta que llega a 100, con la comprobaci´n del if, vuelve al 0 y vuelve a empezar
     setInterval(() => {
       progreso += 10;
 
@@ -153,3 +154,4 @@
 
 </body>
 </html>
+
